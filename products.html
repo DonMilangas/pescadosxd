@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="utf-8">
+         <title>Programando Ando</title>
+         <link rel="stylesheet" type="text/css" href="mylab.css">
+         <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     </head>
+     <body>
+        <!--HEADER-->
+        <header>
+            <nav>
+                <button class="nav-boton" onclick="action()">Menú</button>
+                <a class="nav-enlace desaparece" href="mylab.html">
+                    <span class="logo">texto de ejemplo</span>
+                </a>
+                <a class="nav-enlace desaparece" href="mylab.html">Inicio</a>
+                <a class="nav-enlace desaparece" href="about.html">Nosotros</a>
+                <a class="nav-enlace desaparece" href="service.html">Servicios</a>
+                <a class="nav-enlace desaparece" href="contact.html">Contacto</a>
+                <a class="nav-enlace desaparece" href="products.html">Productos</a>
+            </nav>
+        </header>
+        <!--SEC.PRINCIPAL-->
+         <!--Catalogo de productos/servicios-->
+    <section class="catalogo">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/fishflops.jpg" alt="">
+                    </div>
+                    <p class="descripcion">PESCADO</p>
+                    <span class="precio">$5.300</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/fishflops.jpg" alt="">
+                    </div>
+                    <p class="descripcion">PESCADO</p>
+                    <span class="precio">$ 6.800</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/fishflops.jpg" alt="">
+                    </div>
+                    <p class="descripcion">PESCADO</p>
+                    <span class="precio">$ 7.600</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/fishflops.jpg" alt="">
+                    </div>
+                    <p class="descripcion">PESCADO</p>
+                    <span class="precio">$ 7.800</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/fishflops.jpg" alt="">
+                    </div>
+                    <p class="descripcion">PESCADO</p>
+                    <span class="precio">$ 7000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/fishflops.jpg" alt="">
+                    </div>
+                    <p class="descripcion">PESCADO</p>
+                    <span class="precio">$ 8.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/fishflops.jpg" alt="">
+                    </div>
+                    <p class="descripcion">PESCADO</p>
+                    <span class="precio">$ 10.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/fishflops.jpg" alt="">
+                    </div>
+                    <p class="descripcion">PESCADO</p>
+                    <span class="precio">$ 10.000</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">Mesa de dulces</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 5.300</span>
+
+              <!--  <div class="fila">
+                    <div class="elegir">
+                        <label for="">Elegir</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>-->
+                    <button>SELECCIONAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+        <!--SCRIPT-->
+        <script>
+            function action() {
+                var ancla =document.getElementsByClassName('nav-enlace');
+                for (var i = 0; i< ancla.length; i++) {
+                    ancla[i].classList.toggle('desaparece');
+                }
+            }
+        </script>
+     </body>
+ </html>

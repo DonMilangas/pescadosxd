@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="utf-8">
+         <title>Programando Ando</title>
+         <link rel="stylesheet" type="text/css" href="mylab.css">
+         <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     </head>
+     <body>
+        <!--HEADER-->
+        <header>
+            <nav>
+                <button class="nav-boton" onclick="action()">Menú</button>
+                <a class="nav-enlace desaparece" href="mylab.html">
+                    <span class="logo">texto de ejemplo</span>
+                </a>
+                <a class="nav-enlace desaparece" href="mylab.html">Inicio</a>
+                <a class="nav-enlace desaparece" href="about.html">Nosotros</a>
+                <a class="nav-enlace desaparece" href="mylab.html">Servicios</a>
+                <a class="nav-enlace desaparece" href="contact.html">Contacto</a>
+            </nav>
+        </header>
+     <!--MAIN ABOUT :)-->
+     <h1>HOLA</h1>
+     <h1>:)</h1>
+     <div>
+        <section class="galeria-nosotros">
+            <a href="#image1"><img src="img/fishflops.jpg" alt=""></a>
+            <a href="#image2"><img src="img/fishflops.jpg" alt=""></a>
+            <a href="#image3"><img src="img/fishflops.jpg" alt=""></a>
+            <a href="#image4"><img src="img/fishflops.jpg" alt=""></a>
+            <a href="#image5"><img src="img/fishflops.jpg" alt=""></a>
+            <a href="#image6"><img src="img/fishflops.jpg" alt=""></a>
+        </section>
+
+        <article class="light-box" id="image1">
+            <a href="#image6" class="next"><i class="bx bxs-left-arrow-cirlce">◄</i></a>
+            <img src="img/fishflops.jpg" alt="">
+            <a href="#image2" class="next"><i class="bx bxs-right-arrow-circle">►</i></a>
+            <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image2">
+            <a href="#image1" class="next"><i class="bx bxs-left-arrow-cirlce">◄</i></a>
+            <img src="img/fishflops.jpg" alt="">
+            <a href="#image3" class="next"><i class="bx bxs-right-arrow-circle">►</i></a>
+            <a href="#" class="close">X</a>  
+        </article>
+
+        <article class="light-box" id="image3">
+            <a href="#image2" class="next"><i class="bx bxs-left-arrow-cirlce">◄</i></a>
+            <img src="img/fishflops.jpg" alt="">
+            <a href="#image4" class="next"><i class="bx bxs-right-arrow-circle">►</i></a>
+            <a href="#" class="close">X</a>  
+        </article>
+
+        <article class="light-box" id="image4">
+            <a href="#image3" class="next"><i class="bx bxs-left-arrow-cirlce">◄</i></a>
+            <img src="img/fishflops.jpg" alt="">
+            <a href="#image5" class="next"><i class="bx bxs-right-arrow-circle">►</i></a>
+            <a href="#" class="close">X</a>  
+        </article>
+
+        <article class="light-box" id="image5">
+            <a href="#image4" class="next"><i class="bx bxs-left-arrow-cirlce">◄</i></a>
+            <img src="img/fishflops.jpg" alt="">
+            <a href="#image6" class="next"><i class="bx bxs-right-arrow-circle">►</i></a>
+            <a href="#" class="close">X</a>  
+        </article>
+
+        <article class="light-box" id="image6">
+            <a href="#image5" class="next"><i class="bx bxs-left-arrow-cirlce">◄</i></a>
+            <img src="img/fishflops.jpg" alt="">
+            <a href="#image1" class="next"><i class="bx bxs-right-arrow-circle">►</i></a>
+            <a href="#" class="close">X</a>  
+        </article>
+     </div>
+     <!--PATA DE PAG-->
+     <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="" alt="logo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>ABOUT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, assumenda,
+                   suscipit, dolorem omnis quasi nesciunt volup</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, assumenda,
+                    suscipit, dolorem omnis quasi nesciunt volup</p>
+            </div>
+            <div class="box">
+                <h2>FOLLOW US</h2>
+                <div class="red-social">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small><b>copyright 2022</b> todos los derechos reservados bla bla bla...</small>
+        </div>
+     </footer>
+     <!--SCRIPT-->
+     <script>
+        function action() {
+            var ancla =document.getElementsByClassName('nav-enlace');
+            for (var i = 0; i< ancla.length; i++) {
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+     </script>
+     </body>
+ </html>

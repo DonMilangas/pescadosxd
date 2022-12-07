@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="utf-8">
+         <title>Programando Ando</title>
+         <link rel="stylesheet" type="text/css" href="mylab.css">
+         <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     </head>
+     <body>
+        <!--HEADER-->
+        <header>
+            <nav>
+                <button class="nav-boton" onclick="action()">Menú</button>
+                <a class="nav-enlace desaparece" href="mylab.html">
+                    <span class="logo">texto de ejemplo</span>
+                </a>
+                <a class="nav-enlace desaparece" href="mylab.html">Inicio</a>
+                <a class="nav-enlace desaparece" href="about.html">Nosotros</a>
+                <a class="nav-enlace desaparece" href="service.html">Servicios</a>
+                <a class="nav-enlace desaparece" href="contact.html">Contacto</a>
+                <a class="nav-enlace desaparece" href="products.html">Productos</a>
+            </nav>
+        </header>
+        <div class="galeria">
+            <h1>.</h1>
+            <div class="linea">
+                <div class="contenedor-imagenes">
+                    <div class="imagenes">
+                        <img src="img/fishflops.jpg" alt="">
+                        <div class="overlay">
+                            <h2>PEZ</h2>
+                     </div>
+                     <div class="imagenes">
+                        <img src="img/fishflops.jpg" alt="">
+                        <div class="overlay">
+                            <h2>PEZ</h2>
+                     </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--footer-->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="" alt="logo">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>ABOUT</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, assumenda,
+                       suscipit, dolorem omnis quasi nesciunt volup</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, assumenda,
+                        suscipit, dolorem omnis quasi nesciunt volup</p>
+                </div>
+                <div class="box">
+                    <h2>FOLLOW US</h2>
+                    <div class="red-social">
+                        <a href="#"><i class="bx bxl-facebook"></i></a>
+                        <a href="#"><i class="bx bxl-instagram"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                        <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small><b>copyright 2022</b> todos los derechos reservados bla bla bla...</small>
+            </div>
+        </footer>
+        <!--SCRIPT-->
+        <script>
+            function action() {
+                var ancla =document.getElementsByClassName('nav-enlace');
+                for (var i = 0; i< ancla.length; i++) {
+                    ancla[i].classList.toggle('desaparece');
+                }
+            }
+        </script>
+     </body>
+ </html>
